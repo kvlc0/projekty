@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="text-blocks">
+                <div class="block block-1">
+                    <details>
+                        <summary> E2EE </summary>
+                            <div class="content">
+                                <p> <span class="icon-pulse icon">🔒</span><b>E2EE</b> to jeden z paru rodzajów szyfrowania — dobra, ale co to jest dokładnie i jak to działa?
+                                E2EE to po angielsku "End to end encryption" czyli po naszemu "Szyfrowanie od początku do końca". Działa ono w ten sposób, że nasze dane, dla przykładu zdjęcie naszego tortu
+                                urodzinowego, które wysłaliśmy naszej babci; podczas przesyłania jest szyfrowane i tylko TY oraz BABCIA możecie odczytać tą wiadomość, nikt inny nie jest w stanie jej odczytać.
+                                Ten rodzaj szyfrowania zapewnica najlepszą prywatnośc
+                                i niezawodność podczas przesyłania danych w "ruchu".
+                                </p>
+                            </div>
+                    </details>
+                </div>
+
+                <div class="block block-2">
+                    <details>
+                        <summary> PGP </summary>
+                            <div class="content">
+                                <p> <span class="icon-pulse icon">🔒</span><b>PGP</b> to jeden z paru rodzajów szyfrowania, ale z kolei tych, które wykonujemy ręcznie — jak to działa?
+                                PGP to po angielsku "Pretty Good Privacy" czyli dosłownie po naszemu znaczy to "Całkiem Dobra Prywatność". Ale jak ono działa? To jest akurat dość skomplikowana sprawa,
+                                używając tego typu szyfrowania nie robi to za nas program lecz my sami musimy za pomocą narzędzi zaszyfrować wiadomości oraz je odszyfrować, ten proces jest dosyć złożony, ale
+                                działa o podobnym zamyśle co E2EE i jest bardzo bezpieczny. Korzysta również z szyfrowania Symetrycznego i Asymetrycznego.
+                                </p>
+                            </div>
+                    </details>
+                </div>
+
+                <div class="block block-3">
+                    <details>
+                        <summary> AES-256 </summary>
+                            <div class="content">
+                                <p> Tak zwany <i>"złoty standard"</i> szyfrowania symetrycznego. Liczba 256 oznacza długość klucza. Jest tak potężny, 
+                                    że nawet najszybsze komputery świata potrzebowałyby miliardów lat, żeby go złamać metodą "brute-force".
+                                </p>
+                            </div>
+                    </details>
+                </div>
+
+                <div class="block block-4">
+                    <details>
+                        <summary> Szyfrowanie </summary>
+                            <div class="content">
+                                <p> Skoro wymieniliśmy szyfrowania w poprzednich definicjach, to co to są za rodzaje szyfrowań?
+                                </p>
+                                <ul>
+                                <li> <span class="icon-pulse icon">🔒</span><b>Symetryczne</b> (np. AES): Masz jeden klucz, który i szyfruje, i odszyfrowuje (jak zwykły klucz do drzwi). </li> 
+
+                                <li> <span class="icon-pulse icon">🔒</span><b>Asymetryczne</b> (np. PGP): Masz dwa klucze – publiczny (każdy go widzi, żeby móc do Ciebie napisać) 
+                                    i prywatny (tylko Ty go masz, żeby to odczytać). </li>
+                                </ul>
+                            </div>
+                    </details>
+                </div>
+
+                <div class="block block-5">
+                    <details>
+                        <summary> Hashing </summary>
+                            <div class="content">
+                                <p> To jest coś, co ludzie często mylą z szyfrowaniem, a to kompletnie co innego.
+                                </p>
+                                <ul>
+                                <li> <b>Jak to działa?</b> To "funkcja skrótu". Robisz z dowolnego pliku (np. obrazka) unikalny ciąg znaków.
+                                     Nie da się go "odszyfrować" z powrotem do zdjęcia, ale jeśli zmienisz choćby jeden piksel w obrazku, 
+                                     skrót będzie zupełnie inny. </li> 
+
+                                <li> <b>Zastosowanie:</b> Tak trzyma się hasła w bazach danych – strona nie zna Twojego hasła, zna tylko jego "skrót". </li>
+
+                                <li> <b>Przykład:</b><span class="icon-pulse icon">🔒</span>SHA-256</li>
+                                </ul>
+                            </div>
+                    </details>
+                </div>
+
+                <div class="block block-6">
+                    <details>
+                        <summary> 2FA </summary>
+                            <div class="content">
+                                <p> Dokładnie znaczy: <i>"Dwuetapowa Weryfikacja"</i>. To dodatkowa warstwa ochrony naszego konta. Działa to tak: 
+                                    podajesz hasło, 
+                                    a potem musisz potwierdzić to np. kodem z SMS-a lub powiadomieniem w telefonie. 
+                                    Dzięki temu, nawet jeśli ktoś ukradnie Twoje hasło, nie wejdzie na konto bez Twojego smartfona.
+                                </p>
+                            </div>
+                    </details>
+                </div>
+
+                <div class="block block-7">
+                    <details>
+                        <summary> VPN </summary>
+                            <div class="content">
+                                <p> <span class="icon-pulse icon">🔒</span><b>VPN-a</b> również możemy zaliczyć jako element, który korzysta  z szyfrowania. 
+                                    Ale jak dokładnie on działa i co to jest?
+                                    <b>VPN</b> po angielsku znaczy "Virtual Private Network" po naszemu "Prywatna Sieć Wirtualna". Jak sama
+                                    nazwa wskazuje, jest to sieć, która jest prywatna a zarazem wirtualna. Działa ona tak:
+                                </p>
+
+                                <ul>
+                                    <p><b>Faza pierwsza</b></p>
+                                    <li> Twój komputer poprzez aplikację VPN łączy się z zewnętrznym serwerem (innym dostawcom sieci) </li>
+                                    <li> Cały ruch z Twojego urządzenia jest szyfrowany przez np. AES-256. Nikt, nawet twój dostawca nie widzi co robisz,
+                                         widzi tylko, że łączysz się z serwerem VPN.
+                                    </li>
+
+                                    <p><b>Faza druga</b></p>
+
+                                    <li> Serwer VPN nadpisuje Twój prawdziwy IP swoim własnym.</li>
+                                    <li> Strony, które odwiedzasz, widzą IP serwera VPN, a nie Twój.</li>
+                                </ul>
+                            </div>
+                    </details>
+                </div>
+
+                <div class="block block-8">
+                    <details>
+                        <summary> FIREWALL </summary>
+                            <div class="content">
+                                <p> <span class="icon-pulse icon">🔒</span><b>FIREWALL</b> to jest taka tarcza dla naszej sieci. Możemy blokować
+                                    pakiety przychodzące oraz wychodzące z naszego komputera, tak jakbyśmy byli kontrolą celną tylko to my decydujemy
+                                    co chcemy wpuścić a co nie. Jest to bardzo przydatne aby obronić się przed np. prostym atakiem <b>DoS</b>.
+                                </p>
+                            </div>
+                    </details>
+                </div>                
+
+                <div class="block block-9">
+                    <details>
+                        <summary> DoS </summary>
+                            <div class="content">
+                                <p> <span class="icon-pulse icon">🔒</span><b>DoS</b>
+                                </p>
+                            </div>
+                    </details>
+                </div>         
+
+
+        </section>
+    </main>
+</body>
+
+</html>
