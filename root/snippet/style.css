@@ -1,8 +1,8 @@
 :root{
-    --bg: #151A28;
+    --bg: #1d1d1d;
     --text: rgb(255, 255, 255);
     --radius: 32px;
-    --border-c: rgb(59, 59, 103);
+    --border-c: rgb(85, 85, 85);
 }
 
 
@@ -18,22 +18,19 @@ body{
     padding:50px;
     flex-wrap: wrap;
     padding:50px;
+    overflow-y: visible;
     justify-content: center;
+
+
 }
 
-@media (max-width: 768px) {
-    .content {
-        padding: 5px;
-        flex-wrap:wrap;
-        font-size:8px;
-    }
+body::-webkit-scrollbar {
+    width: 6px;
 }
-
-/* hide page scrollbar */
-html { scrollbar-width: none; } /* Firefox */
-body { -ms-overflow-style: none; } /* IE and Edge */
-body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
-/* end hide page scrollbar */
+body::-webkit-scrollbar-thumb {
+    background: var(--border-c);
+    border-radius: 10px;
+}
 
 summary{
     font-size:5vh;
@@ -56,15 +53,9 @@ details{
     }
 }
 
-@keyframes pulse {
-    0% { opacity: .3; }
-    50% { opacity: 1;}
-    100% { opacity: .3;}
-}
-
-
-.icon-pulse {
-  animation: pulse 1s infinite ease-in-out;
+#title{
+    justify-content: center;
+    display:flex;
 }
 
 .block{
@@ -75,6 +66,7 @@ details{
     width:30vw;
     padding:10px;
     transition:0.3s ease;
+    min-width: 400px;
     
 }
 
@@ -96,5 +88,18 @@ details{
 
 .container{
     transition:0.3s ease;
-    animation: fadeInUp 0.8s ease-out forwards;
+    
+}
+
+.content{
+    display:flex;
+    border: 2px solid var(--border-c);
+    border-radius: var(--radius);
+    box-shadow: inset 0px -15px 50px 0px rgba(255, 255, 255, 0.2);
+    padding:30px;
+    margin-top:3vh;
+    width:26vw;
+    transition:0.3s ease;
+    background-color: rgb(19, 19, 19);
+    min-width: 400px;
 }

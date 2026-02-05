@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="title-bar">
+            <h1 id="title"> Code Snippets</h1>
+        </section>
+
+
+        <section class="container">
+            <div class="text-blocks">
+                <div class="block block-1">
+                    <details>
+                        <summary> Keyframes </summary>
+                            <p><b> Pulsing animation Snippet</b></p>
+                            <div class="content">
+                                
+                                <pre>
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+.icon-pulse {
+  animation: pulse 2s infinite ease-in-out;
+}                                   
+                                </pre>
+                            </div>
+                            <p><b>Writing animation</b></p>
+                            <div class="content">
+                                
+                                <pre>
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.typing-effect {
+  overflow: hidden; 
+  white-space: nowrap; 
+  border-right: 2px solid; /* Kursor tekstowy */
+  animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--text) }
+}      
+                                </pre>
+                            </div>
+                    </details>
+                </div>
+
+
+ 
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
