@@ -103,3 +103,60 @@ details{
     background-color: rgb(19, 19, 19);
     min-width: 400px;
 }
+
+.push-container{
+    background-color: rgb(19, 19, 19);
+    border: 2px solid var(--border-c);
+    width: 12vw;
+    height:5vh;
+    display:flex;
+    justify-content: center;
+    align-self:center;
+    border-radius: 100vh;
+}
+
+.push-content{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-family:verdana;
+}
+
+.push-element{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    right:45vw;
+    visibility: hidden;
+    opacity:0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    user-select: none;
+    transform:translateY(20px);
+}
+
+.push-element.show{
+    visibility: visible;
+    opacity:1;
+    transform:translateY(0);
+}
+
+.icon-pack{
+    display:flex;
+    position:absolute;
+    justify-content: center;
+    right:2vw;
+    transform:scale(1.3);
+    overflow:hidden;
+    border:1px solid var(--border-c);
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.icon-pack:hover{
+    transform:scale(1.1);
+    transition:0.3s ease;
+}
+
+.copy-icon{
+    padding:5px;
+}
